@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+ .container {
+     padding: 20px;
+ }
+
+ .navigation {
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+ }
+
+ .link{
+     text-decoration: none;
+     color: black;
+     font-size: 1.6rem;
+ }
+
+ .link:hover{
+    border-bottom: 1px solid #000;
+ }
+
+ footer{
+     background-color: #2D333B;
+     padding: 5px;
+ }
+
+ footer p{
+     color: white;
+     text-align: center;
+ }
+
