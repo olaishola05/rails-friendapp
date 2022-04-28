@@ -1,14 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Friends</h1>
+<h1 class='f-header'>Friends List</h1>
 
 <div id="friends">
+ <ul class=lists>
   <% @friends.each do |friend| %>
+    <li>
     <%= render friend %>
     <p>
-      <%= link_to "Show this friend", friend %>
+      <%= link_to "Show friend", friend %>
     </p>
+    </li>
+    
   <% end %>
+ 
+ </ul>
+<button type='button' class='addButton'>
+<%= link_to "Add friend", new_friend_path, class:'b-link' %>
+</button>
 </div>
 
-<%= link_to "New friend", new_friend_path %>

@@ -37,9 +37,88 @@
     border-bottom: 1px solid #000;
  }
 
- footer{
+ .f-header{
+     text-align: center;
+ }
+
+ #friends{
+     width: 70%;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .lists{
+     width: 80%;
+     display: flex;
+     flex-direction: column;
+     margin: 0 auto;
+     padding: 0;
+ }
+
+ .lists li{
+     list-style: none;
+     display: flex;
+     gap: 10px;
+ }
+
+ .friend{
+     display: flex;
+     gap: 10px;
+ }
+
+ .addButton{
+     padding: 10px 20px;
      background-color: #2D333B;
-     padding: 5px;
+     border: none;
+     border-radius: 5px;
+     width: 20%;
+     margin: 0 auto;
+     margin-top: 20px;
+ }
+
+ .b-link{
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+ }
+
+ .form-render{
+     width: 80%;
+     border: 1px solid red;
+     margin: 0 auto;
+ }
+
+ .form-render h1{
+     text-align: center;
+ }
+
+ .form-container{
+     width: 50%;
+     padding: 20px;
+     margin: 0 auto;
+     border: 1px solid red;
+ }
+
+ .form-container .form-item{
+     display: flex;
+     gap: 15px;
+     margin-bottom: 10px;
+ }
+
+ input{
+     width: 80%;
+     padding: 8px;
+ }
+
+
+ footer{
+     width: 98%;
+     background-color: #2D333B;
+     padding: 3px;
+     position: fixed;
+     top: 50;
+     bottom: 0;
  }
 
  footer p{
