@@ -3,4 +3,15 @@
 <%= link_to 'Friends', friends_path, class:'link'%>
 <%= link_to 'Add Friend', new_friend_path, class:'link'%>
 <%= link_to 'About', home_about_path, class:'link'%>
+
+<% if user_signed_in? %>
+    <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:'link'%>
+    <%= link_to 'Edit Profile', edit_user_registration_path, class:'link'%>
+<% else %>
+
+    <%= link_to 'Sign Up', new_user_registration_path, class:'link'%>
+    <%= link_to 'Sign In', new_user_session_path, class:'link'%>
+<% end %>
+
+
 </nav>
