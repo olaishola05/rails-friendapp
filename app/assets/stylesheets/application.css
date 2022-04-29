@@ -110,13 +110,47 @@
      padding: 8px;
  }
 
- label{
-     font-weight: bold;
-     width: 14.5%;
+ .submit{
+     width: 40%;
  }
 
- .submit{
-     width: 30%;
+ .show-jumbo{
+     padding: 40px;
+     background: gray;
+     width: 70%;
+     margin: 0 auto;
+     height: 50%;
+     color: white;
+ }
+
+ .show-btn-container{
+     width: 80%;
+
+     display: flex;
+ }
+
+ .show-btn{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .s-btn{
+     width: 20%;
+     text-decoration: none;
+
+ }
+
+ .delete{
+     padding: 10px 10px;
+     background-color: #2D333B;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     margin: 5px;
  }
 
 

@@ -1,10 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
+<div class='show-jumbo'>
+
 <%= render @friend %>
 
-<div>
-  <%= link_to "Edit this friend", edit_friend_path(@friend) %> |
-  <%= link_to "Back to friends", friends_path %>
+<div class='show-btn-container'>
+  <div class='show-btn'>
+  <%= link_to "Edit this friend", edit_friend_path(@friend), class: 'delete s-btn' %>
+  <%= link_to "Back to friends", friends_path, class: 'delete s-btn' %>
+  <%= button_to "Destroy this friend", @friend, method: :delete, class: 'delete'%>
+  </div>
+</div>
 
-  <%= button_to "Destroy this friend", @friend, method: :delete %>
 </div>
